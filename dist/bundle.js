@@ -3871,8 +3871,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'endpoint',
 	    value: function endpoint() {
 	      var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-	          query = _ref.query,
-	          protocol = _ref.protocol;
+	          query = _ref.query;
 
 	      var params = this.options.params;
 
@@ -3882,14 +3881,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        q: query
 	      }));
 
-	      return protocol + '//nominatim.openstreetmap.org/search?' + paramString;
+	      return 'https://nominatim.openstreetmap.org/search?' + paramString;
 	    }
 	  }, {
 	    key: 'endpointReverse',
 	    value: function endpointReverse() {
 	      var _ref2 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
-	          data = _ref2.data,
-	          protocol = _ref2.protocol;
+	          data = _ref2.data;
 
 	      var params = this.options.params;
 
@@ -3902,7 +3900,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        osm_type: this.translateOsmType(data.raw.osm_type)
 	      }));
 
-	      return protocol + '//nominatim.openstreetmap.org/reverse?' + paramString;
+	      return 'https://nominatim.openstreetmap.org/reverse?' + paramString;
 	    }
 	  }, {
 	    key: 'parse',
